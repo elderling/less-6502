@@ -1,5 +1,7 @@
+#define UNITY_EXCLUDE_MATH_H
+#define UNITY_EXCLUDE_FLOAT
+#define UNITY_EXCLUDE_FLOAT_PRINT
 #include "Unity/src/unity.h"
-#include "less.h"
 
 void setUp(void)
 {
@@ -20,7 +22,6 @@ void test_ok(void)
     return;
 }
 
-
 int main(void)
 {
     UNITY_BEGIN();
@@ -29,4 +30,3 @@ int main(void)
 
     return UNITY_END();
 }
-
